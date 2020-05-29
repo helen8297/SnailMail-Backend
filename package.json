@@ -1,0 +1,21 @@
+{
+  "name": "snail-mail-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config app.js",
+    "dbcreateusertable": "node -r dotenv/config ./db/scripts/createusertable.js",
+    "dbpopulateusers": "node -r dotenv/config ./db/scripts/populateusers.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "pg": "^8.2.1"
+  }
+}

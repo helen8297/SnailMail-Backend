@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS users (user_id SERIAL PRIMARY KEY, name TEXT, address TEXT, postcode VARCHAR(8), friend_ids INTEGER REFERENCES users (user_id) [])
